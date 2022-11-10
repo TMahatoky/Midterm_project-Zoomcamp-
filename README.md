@@ -8,6 +8,10 @@ are worth getting into. However, among all those job offers, there are frauds th
 
 The predict-test.py file contains a sample offer to test the model. 
 
+dockerbuilding: 
+  - docker build -t midproject .
+  - docker run -it --rm -p 9696:9696 midproject
+
 To run the project after dockerbuilding: 
   - First option : * pipenv install waitress (is needed if on windows)   
                    * pipenv run waitress-serve --listen=:0.0.0.0:9696 predict:app
